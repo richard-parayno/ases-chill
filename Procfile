@@ -1,1 +1,1 @@
-web: gunicorn --config gunicorn.conf hello.wsgi
+web: gunicorn --config gunicorn.conf bigchill.wsgi
