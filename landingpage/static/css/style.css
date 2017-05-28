@@ -78,10 +78,14 @@ body {
 
 }
 
+/* navbar */
+
 nav {
     padding-bottom: 50px;
     background-color: #F27039;
 }
+
+/* header-bg */
 
 #header {
     margin-top: 0px;
@@ -89,11 +93,12 @@ nav {
     
 }
 
-
+/* header image */
 #header img {
     max-width: 80%;
 }
 
+/* navbar links */
 #navlinks {
     padding-top: 30px;
     font-weight: 400;
@@ -106,6 +111,7 @@ nav {
     margin-right: 10px;
 }
 
+/* how it started section */
 #howitstarted h2 {
     font-size: 50px;
     font-weight: 700;    
@@ -123,6 +129,8 @@ nav {
 .container-fluid .row {
     padding: 20px;
 }
+
+/* menu cards */
 
 #menu h2 {
     font-size: 50px;
@@ -149,6 +157,7 @@ nav {
     padding-left: 30px;
 }
 
+/* promo section */
 
 #coupon {
     color: white;
@@ -175,6 +184,8 @@ nav {
     
 }
 
+/* services */
+
 #services h2 {
     font-size: 50px;
     font-weight: 700;
@@ -187,6 +198,8 @@ nav {
     margin-bottom: 0px;
 }
 
+/* events */
+
 #events h2 {
     font-size: 50px;
     font-weight: 700;
@@ -197,7 +210,6 @@ nav {
     height: 100vh;
     margin-top: 30px;
 }
-
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -218,6 +230,8 @@ nav {
     height: auto;
 }
 
+/*contact form */
+
 #contact h2 {
     font-size: 50px;
     font-weight: 700;
@@ -227,6 +241,7 @@ nav {
     float: right;
 }
 
+/* footer */
 #footer {
     margin: 0px;
     padding: 0px;
@@ -237,6 +252,8 @@ nav {
     padding-bottom: 0px;
     padding-left: 0px;
 }
+
+/* navbar shrink */
 
 nav.navbar.shrink {
     padding-bottom: 20px;   
