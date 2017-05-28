@@ -1,13 +1,96 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat-Bold.otf');
 }
 
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+/** navbar **/
+.navbar-default {
+  background-color: #f27039 !important;
+  border-color: #ee5e21 !important;
+}
+.navbar-default .navbar-brand {
+  color: #fdfdfd !important;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff !important;
+}
+.navbar-default .navbar-text {
+  color: #fdfdfd !important;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fdfdfd !important;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff !important;
+  background-color: #ee5e21 !important;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff !important;
+  background-color: #ee5e21 !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ee5e21 !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ee5e21 !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fdfdfd !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fdfdfd !important;
+}
+.navbar-default .navbar-link {
+  color: #fdfdfd !important;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #ee5e21;
+  }
+}
+/** navbar **/
+
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Regular', sans-serif;
     font-weight: 400;
-    padding-top: 130px;
-    margin: 10px;
+    padding-top: 100px;
+
 }
 
 nav {
@@ -16,14 +99,21 @@ nav {
 }
 
 #header {
-    background-color: #F27039;
     margin-top: 0px;
+    background: linear-gradient(180deg, #F27039 70%, white 30%);
+    
+}
+
+
+#header img {
+    max-width: 80%;
 }
 
 #navlinks {
     padding-top: 30px;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
+    
 }
 
 #navlinks li {
@@ -54,13 +144,20 @@ nav {
     font-weight: 700;
 }
 
+
+
 #menu img {
-    height: 150px;
+    height: 10%;
+    width: 30%;
+    float: left;
+    margin: 10px;
 }
 
 #menu .card {
-    text-align: center;
-    
+    text-align: left;
+    margin: 10px;
+    padding: 30px;
+    box-shadow: 0 0 5px #000;
 }
 
 
@@ -83,7 +180,9 @@ nav {
 }
 
 #coupon div {
-    padding: 40px;
+    padding: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #services h2 {
@@ -91,8 +190,11 @@ nav {
     font-weight: 700;
 }
 
-#franchise {
+#franchise h2 {
     text-align: right;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #events h2 {
@@ -124,4 +226,24 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
+}
+
+#contact h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#submitfloat {
+    float: right;
+}
+
+#footer {
+    margin: 0px;
+    padding: 0px;
+}
+
+#footer .row {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
