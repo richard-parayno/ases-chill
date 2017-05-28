@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        {% load staticfiles %}        
         <title>Big Chill Philippines</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{% static css/style.css %}" rel="stylesheet">
-        <link href="{% static css/bootstrap-min.css %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     </head>
     <body>
+        <!-- nav start -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                    <img src="{% static 'img/big_chill_logo.png'%}" alt="" height="350%">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 10px;">
+                    <ul class="nav navbar-nav navbar-right" id="navlinks">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+
         <!-- header start -->
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <img class="img-responsive" src="{% static 'img/choose_fresh_always.png' %}" alt="Choose Fresh Always">
+                </div>
+            </div>
+        </div>
         <!-- header end -->
 
         <!-- description start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="howitstarted">
             <div class="row">
-                <div class="col-xs-12 col-md-12">
+                <div class="col-xs-12 col-md-12 text-center">
                     <h2>HOW IT ALL STARTED</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <p>In December 1994, Big Chill was established as a new concept, serving premium quality blended shakes made with 100% fresh-cut fruit. It caters to a diverse age group within the AB & upper C segments of the market with branches conveniently located in shopping malls, universities & office buildings within Greater anila. Its extensive network of shops & kiosks provide convenient access to fresh fruit shakes anytime, anywhere.</p>
+                <div class="col-xs-12 col-md-6" id="hispara1">
+                    <p>In December 1994, Big Chill was established as a new concept, serving premium quality blended shakes made with 100% fresh-cut fruit. It caters to a diverse age group within the AB & upper C segments of the market with branches conveniently located in shopping malls, universities & office buildings within Greater Manila. Its extensive network of shops & kiosks provide convenient access to fresh fruit shakes anytime, anywhere.</p>
                     <p>Big Chill is known for its award-winning quality of beverages, having been recognized as the "Best Fruit Shake Drink" by the Product Quality Excellence Awards for both the regional and national categories.</p>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <img src="{% static img/FRESHBAR_logo_2.jpg %}" alt="FreshBar by Big Chill">
+                    <img src="{% static 'img/FRESHBAR_logo_2.jpg' %}" alt="FreshBar by Big Chill">
                     <p>Fresh Bar is an expanded concept of Big Chill which offers the same fresh fruit shakes along with a line of hearty gourmet soups, healthy pasta offerings, fresh salads and sandwiches. It aimts to make healthy meal options readility available tothe same market that appreciates Big Chill's selection of fresh fruit shakes. </p>
                     <p>Big Chill and Fresh Bar is an exciting foodservice beverage concept ideally suited to today's healthy and fast paced lifestyle.</p>
                 </div>
@@ -33,49 +62,53 @@
         <!-- description end -->
 
         <!-- menu start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="menu">
             <div class="row">
-                <h2>OUR MENU</h2>
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h2>OUR MENU</h2>
+                </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/lemon_PNG25198.png %}" alt="Dalanghita Dazzler">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/lemon_PNG25198.png' %}" alt="Dalanghita Dazzler">
                     <h3>Dalanghita Dazzler</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/strawberry_PNG2603.png %}" alt="Strawberry Daiquire">
+                
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/strawberry_PNG2603.png' %}" alt="Strawberry Daiquire">
                     <h3>Strawberry Daiquire</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/banana_PNG845.png %}" alt="Banana Smoothie">
+                
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/banana_PNG845.png' %}" alt="Banana Smoothie">
                     <h3>Banana Smoothie</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/grape_PNG2982.png %}" alt="Gorgeous Grape">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/grape_PNG2982.png' %}" alt="Gorgeous Grape">
                     <h3>Gorgeous Grape</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/kiwi_PNG4034.png %}" alt="Kiwi Kraze">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/kiwi_PNG4034.png' %}" alt="Kiwi Kraze">
                     <h3>Kiwi Kraze</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/mango_PNG9173.png %}" alt="Mango Meditation">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/mango_PNG9173.png' %}" alt="Mango Meditation">
                     <h3>Mango Meditation</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/watermelon_PNG2642.png %}" alt="Melon Melba">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/watermelon_PNG2642.png' %}" alt="Melon Melba">
                     <h3>Melon Melba</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/banana_PNG851.png %}" alt="Banana Peanut">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/banana_PNG851.png' %}" alt="Banana Peanut">
                     <h3>Banana Peanut</h3>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <img src="{% static img/fruits/mango_PNG9182.png %}" alt="Strawberry Mango">
+                <div class="col-xs-12 col-md-4 card">
+                    <img src="{% static 'img/fruits/mango_PNG9182.png' %}" alt="Strawberry Mango">
                     <h3>Strawberry Mango</h3>
                 </div>
             </div>
@@ -83,30 +116,41 @@
         <!-- menu end -->
     
         <!-- coupon start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="coupon">
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-md-2">
+                </div>
+                <div class="col-xs-12 col-md-3 text-center" id="coupon-1">
                     <h1>15% OFF on MONDAYS</h1>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-md-2">
+                </div>
+                <div class="col-xs-12 col-md-3 text-center" id="coupon-2">
                     <h1>BUY 1 GET 1</h1>
+                </div>
+                <div class="col-md-2">
                 </div>
             </div>
         </div>
         <!-- coupon end -->
 
         <!-- services start -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="services">
             <div class="row">
-                <div class="col-xs-12 col-md-12">
-                <h2>OUR SERVICES</h2>
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h2>OUR SERVICES</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-md-1">
+                    
+                </div>
+                <div class="col-xs-12 col-md-4" id="franchise">
                     <h2>HOW TO FRANCHISE WITH US</h2>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-md-1">
+                </div>
+                <div class="col-xs-12 col-md-5">
                     <p>Prospective franchises to be evaluated based on business experience, financial capability and proposed sites. Investment requirement varies depending on store size and location, but multi-unit commitments are preferred for area development programs.</p>
                     <p>Franchise fee is already included in the package cost.</p>
                     <p>For more information on The Big Chill's area development or franchise program, you may call +632 - 661 - 7723.</p>
@@ -116,6 +160,39 @@
         <!-- services end -->
 
         <!-- events carousel start -->
+        <div class="container-fluid" id="events">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <h2>OUR EVENTS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="gallery" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#gallery" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="first-slide" src="{% static 'img/kissandfly.jpg'%}" alt="First slide">
+                            <div class="container">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-- events carousel end -->
 
         <!-- contact start -->
@@ -126,5 +203,7 @@
 
 
     </body>
-    <script src="{% static js/bootstrap-min.js %}"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
 </html>
