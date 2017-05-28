@@ -145,6 +145,10 @@ nav {
     box-shadow: 0 0 5px #000;
 }
 
+#menu .container {
+    padding-left: 30px;
+}
+
 
 #coupon {
     color: white;
@@ -233,3 +237,16 @@ nav {
     padding-bottom: 0px;
     padding-left: 0px;
 }
+
+nav.navbar.shrink {
+    padding-bottom: 20px;   
+}
+
+nav.navbar{
+    background-color:#ccc;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+
